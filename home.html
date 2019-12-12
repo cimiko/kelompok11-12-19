@@ -39,18 +39,18 @@
       <div class="col-12 col-md-6 col-lg-8">
         <div class="row">
           <div class="col-12 col-lg-6">
-            <div class="row">
-              <div class="col-2" style="font-size: 23px;"><i class="fas fa-shopping-bag"></i></div>
-              <div class="col-10">
+            <div class="row act1">
+              <div class="col-2 p-0 text-right f1" style="font-size: 23px;"><i class="fas fa-shopping-bag"></i></div>
+              <div class="col-10 text-justify">
                 <div class="h3"><span style="color: red;">Don't USE</span> PLASTIC</div>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur optio ab, rem
                 dicta ipsam, architecto pariatur laudantium provident inventore vitae dolorum eos ipsum nesciunt debitis
                 doloremque consequuntur culpa, aspernatur quae?
               </div>
             </div>
-            <div class="row">
-              <div class="col-2" style="font-size: 23px;"><i class="far fa-lightbulb"></i></div>
-              <div class="col-10">
+            <div class="row act2">
+              <div class="col-2 p-0 text-right f2" style="font-size: 23px;"><i class="far fa-lightbulb"></i></div>
+              <div class="col-10 text-justify">
                 <div class="h3">Please! <span style="color: greenyellow;">SAVE</span> ENERGY</div>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur optio ab, rem
                 dicta ipsam, architecto pariatur laudantium provident inventore vitae dolorum eos ipsum nesciunt debitis
@@ -59,18 +59,18 @@
             </div>
           </div>
           <div class="col-12 col-lg-6">
-            <div class="row">
-              <div class="col-2" style="font-size: 23px;"><i class="fas fa-broom"></i></div>
-              <div class="col-10">
+            <div class="row act3">
+              <div class="col-2 p-0 text-right f3" style="font-size: 23px;"><i class="fas fa-broom"></i></div>
+              <div class="col-10 text-justify">
                 <div class="h3">STAY <span style="color: yellow;">CLEAN</span></div>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur optio ab, rem
                 dicta ipsam, architecto pariatur laudantium provident inventore vitae dolorum eos ipsum nesciunt debitis
                 doloremque consequuntur culpa, aspernatur quae?
               </div>
             </div>
-            <div class="row">
-              <div class="col-2" style="font-size: 23px;"><i class="fas fa-recycle"></i></div>
-              <div class="col-10">
+            <div class="row act4">
+              <div class="col-2 p-0 text-right f4" style="font-size: 23px;"><i class="fas fa-recycle"></i></div>
+              <div class="col-10 text-justify">
                 <div class="h3"><span style="color: blue;">reDUCE, reUSE, & reCYCLE</span></div>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur optio ab, rem
                 dicta ipsam, architecto pariatur laudantium provident inventore vitae dolorum eos ipsum nesciunt debitis
@@ -102,6 +102,30 @@
       });
       $(".bner").mouseleave(function () {
         $(".slid").slideUp("fast");
+      });
+      $(".act1").hover(function () {
+        $(".f1").css("color","orange");
+      });
+      $(".act1").mouseleave(function () {
+        $(".f1").css("color","black");
+      });
+      $(".act2").hover(function () {
+        $(".f2").css("color","orange");
+      });
+      $(".act2").mouseleave(function () {
+        $(".f2").css("color","black");
+      });
+      $(".act3").hover(function () {
+        $(".f3").css("color","orange");
+      });
+      $(".act3").mouseleave(function () {
+        $(".f3").css("color","black");
+      });
+      $(".act4").hover(function () {
+        $(".f4").css("color","orange");
+      });
+      $(".act4").mouseleave(function () {
+        $(".f4").css("color","black");
       });
     });
   </script>
