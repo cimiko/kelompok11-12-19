@@ -1,26 +1,65 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <script src="https://kit.fontawesome.com/5ac1dba0a5.js" crossorigin="anonymous"></script>
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/5ac1dba0a5.js" crossorigin="anonymous"></script>
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <h1>Hello, world!</h1>
+  <AA>
+    <div class="row">
+      <div class="d-none d-md-block d-lg-block col-md-6 col-lg-4 bner" style="position: relative;">
+
+        <img src="bibit.png" alt="bibit" style="position: absolute; top: 0; left: 4%;">
+        <div class="slid"
+          style="height: 289px; width: 383px; position: absolute; top: 0; left: 4%; background-color: chartreuse; opacity: .4; display: none;">
+        </div>
+        <div class="slid bg-transparent" style="height: 289px; width: 383px; position: absolute; top: 0; left: 4%; display: none;">
+          <h1 style="transform: rotate(270deg); position: absolute; right: -30%; top: 0; bottom: 0;">SAVE ME!</h1>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-8">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At enim, dolorum blanditiis esse amet aliquam dolore
+        necessitatibus inventore voluptatum architecto eos deleniti laborum ullam hic quae ducimus culpa tempore
+        obcaecati.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae necessitatibus sequi dolorem modi aliquam
+        delectus perspiciatis? Libero, ex rerum maiores iure illo laboriosam quas est earum officia odio dolorem ea!
+      </div>
+    </div>
+  </AA>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+  <script>
+      $(document).ready(function(){
+        $(".bner").mouseenter(function(){
+          $(".slid").slideDown("fast");
+        });
+        $(".bner").mouseleave(function(){
+          $(".slid").slideUp("fast");
+        });
+      });
+  </script>
+</body>
+
 </html>
