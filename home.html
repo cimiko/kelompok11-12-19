@@ -347,6 +347,17 @@
       });
     });
     </script>
+
+    <script>
+      $(document).ready(function () {
+        $(".bner").mouseenter(function () {
+          $(".slid").slideDown("fast");
+        });
+        $(".bner").mouseleave(function () {
+          $(".slid").slideUp("fast");
+        });
+      });
+    </script>
 </body>
 
 </html>
