@@ -13,6 +13,95 @@
   <title>Hello, world!</title>
 </head>
 
+<style>
+  #dimg img {}
+
+  #card {
+    position: relative;
+  }
+
+  #card h1 {
+    position: absolute;
+    margin-right: 20px;
+  }
+
+  #card h2 {
+    margin-bottom: 100px;
+    margin-top: 100px;
+    margin-left: 75px;
+  }
+
+  #card p {
+    margin-left: 75px;
+  }
+
+  #card h6 {
+    float: left;
+    transform: rotate(270deg);
+    margin-top: 50px;
+    color: red;
+    text-shadow: 1px 1px 1px grey;
+  }
+
+  .progress {
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 10px;
+  }
+
+  .progress-bar {
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 5px;
+  }
+
+  .progress-bar:hover {
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 5px;
+    color: red;
+    text-shadow: 5px 5px 5px grey;
+  }
+
+  #progress p {
+    text-shadow: 2px 2px 2px grey;
+    border-radius: 10px;
+  }
+
+  .fas {
+    text-shadow: 2px 2px 2px grey;
+  }
+
+  .fas:hover {
+    text-shadow: none;
+    color: red;
+  }
+
+  .jumbotron {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRefFdQfRsDkvqAHjrY6naJninMSjrhNlnvqjhqOloExpPNxOhm);
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    color: white;
+    box-shadow: 5px 0px 5px 7px grey;
+  }
+
+  .jumbotron span, p{
+    text-shadow: 3px 3px 3px grey;
+  }
+
+  .jumbotron p:hover{
+    text-shadow: 3px 3px 3px grey;
+    color: red;
+  }
+
+  section{
+    box-shadow: 5px 5px 5px grey;
+  }
+
+  img{
+    box-shadow: 5px 5px 5px grey;
+  }
+</style>
+
+
 <body>
   <!-- baris3 -->
 
@@ -50,25 +139,77 @@
   </section>
 
   <section>
-    <div class="container-fluid">
-      <div class="row">
+    <div class="container-fluid" style="padding-top: 50px; padding-bottom: 50px;">
+      <div class="row" id="card">
         <div class="col-sm-6">
-          
+          <h6>WHO WE ARE</h6>
+          <h2>Meet Our<br><span style="color:blue; text-shadow: 2px 2px 2px grey;">Talented</span> Team</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
         <div class="col-sm-6">
+          <div class="card-borderless">
+            <div class="row">
+              <div class="col-6 p-0" id="dimg">
+                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ3rONtFET5zHap59PXz11xinoXOJNt4TsoxtNRrEq7J_YM4Be5" class="card-img-top" alt="Image Error" width="50%"></a>
+              </div>
+              <div class="col-6 p-0" id="dimg">
+                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ3rONtFET5zHap59PXz11xinoXOJNt4TsoxtNRrEq7J_YM4Be5" class="card-img-top" alt="Image Error" width="50%"></a>
+              </div>
+              <div class="slid" style="height: 239,69px; width: 320px; position: absolute; top: 0; left: 0%; background-color: chartreus; opacity: .4; display: none;">
+              </div>
+              <div class="slid bg-transparent" style="height: 239,69px; width: 320px; position: absolute; top: 0; left: 0%; display: none;">
+                <h1 style="position: absolute; left: 10%; top: 0; bottom: 0;">Explore</h1>
+              </div>
+            </div>
+            <div class="icon-card text-center">
+              <a href="#" style="color: gold; font-size: 30px;"><i class="fas fa-chevron-left"></i></a>
+              <a href="#" style="color: gold; font-size: 30px;"><i class="fas fa-chevron-right" style="padding-left: 200px;"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="row" style="padding-bottom: 50px;" id="progress">
+        <div class="col-6">
+          <p>Web Programing</p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="" aria-valuemax="100">90%</div>
+          </div>
+          <br><br>
+          <p>Web Design</p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 60%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">60%</div>
+          </div>
+        </div>
+        <div class="col-6">
+          <p>Mobile Programming</p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 70%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">70%</div>
+          </div>
+          <br><br>
+          <p>Photoshop</p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 60%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">60%</div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
+  <section>
+    <div class="jumbotron jumbotron-fluid text-center">
+      <div class="container">
+        <h1 class="display-4"><i class="fas fa-quote-left"></i><span>We Design, Develop, Exceute all the products assigned by company<br>On Customer services and Product</span><i class="fas fa-quote-right"></i></h1>
+        <p class="lead">-Viswanath</p>
+      </div>
+    </div>
+  </section>
 
 
   <!-- end baris 3 -->
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
 
 
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
