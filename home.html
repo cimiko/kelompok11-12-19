@@ -15,7 +15,16 @@
 </head>
 
 <body>
-  <h1>Hello, world!</h1>
+  <div class="row">
+    <div class="col-2">
+      <h5 style="transform: rotate(270deg); position: absolute; top: 45%; left: 65%; color: orange;">how to</h5>
+    </div>
+    <div class="col-10">
+      <h1 class="display-1">SAVE OUR PLANET</h1>
+    </div>
+  </div>
+
+
   <AA>
     <div class="row">
       <div class="d-none d-md-block d-lg-block col-md-6 col-lg-4 bner" style="position: relative;">
@@ -24,16 +33,54 @@
         <div class="slid"
           style="height: 289px; width: 383px; position: absolute; top: 0; left: 4%; background-color: chartreuse; opacity: .4; display: none;">
         </div>
-        <div class="slid bg-transparent" style="height: 289px; width: 383px; position: absolute; top: 0; left: 4%; display: none;">
+        <div class="slid bg-transparent"
+          style="height: 289px; width: 383px; position: absolute; top: 0; left: 4%; display: none;">
           <h1 style="transform: rotate(270deg); position: absolute; right: -30%; top: 0; bottom: 0;">SAVE ME!</h1>
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-8">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. At enim, dolorum blanditiis esse amet aliquam dolore
-        necessitatibus inventore voluptatum architecto eos deleniti laborum ullam hic quae ducimus culpa tempore
-        obcaecati.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae necessitatibus sequi dolorem modi aliquam
-        delectus perspiciatis? Libero, ex rerum maiores iure illo laboriosam quas est earum officia odio dolorem ea!
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="row">
+              <div class="col-1" style="font-size: 23px;"><i class="fas fa-shopping-bag"></i></div>
+              <div class="col-11">
+                <div class="h3"><span style="color: red;">Don't USE</span> PLASTIC</div>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur optio ab, rem
+                dicta ipsam, architecto pariatur laudantium provident inventore vitae dolorum eos ipsum nesciunt debitis
+                doloremque consequuntur culpa, aspernatur quae?
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-1" style="font-size: 23px;"><i class="far fa-lightbulb"></i></div>
+              <div class="col-11">
+                <div class="h3">Please! <span style="color: greenyellow;">SAVE</span> ENERGY</div>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur optio ab, rem
+                dicta ipsam, architecto pariatur laudantium provident inventore vitae dolorum eos ipsum nesciunt debitis
+                doloremque consequuntur culpa, aspernatur quae?
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="row">
+              <div class="col-1" style="font-size: 23px;"><i class="fas fa-broom"></i></div>
+              <div class="col-11">
+                <div class="h3">STAY <span style="color: yellow;">CLEAN</span></div>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur optio ab, rem
+                dicta ipsam, architecto pariatur laudantium provident inventore vitae dolorum eos ipsum nesciunt debitis
+                doloremque consequuntur culpa, aspernatur quae?
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-1" style="font-size: 23px;"><i class="fas fa-recycle"></i></div>
+              <div class="col-11">
+                <div class="h3"><span style="color: blue;">reDUCE, reUSE, & reCYCLE</span></div>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur optio ab, rem
+                dicta ipsam, architecto pariatur laudantium provident inventore vitae dolorum eos ipsum nesciunt debitis
+                doloremque consequuntur culpa, aspernatur quae?
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </AA>
@@ -51,14 +98,14 @@
     crossorigin="anonymous"></script>
 
   <script>
-      $(document).ready(function(){
-        $(".bner").mouseenter(function(){
-          $(".slid").slideDown("fast");
-        });
-        $(".bner").mouseleave(function(){
-          $(".slid").slideUp("fast");
-        });
+    $(document).ready(function () {
+      $(".bner").mouseenter(function () {
+        $(".slid").slideDown("fast");
       });
+      $(".bner").mouseleave(function () {
+        $(".slid").slideUp("fast");
+      });
+    });
   </script>
 </body>
 
